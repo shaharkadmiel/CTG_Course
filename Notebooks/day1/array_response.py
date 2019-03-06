@@ -64,4 +64,4 @@ def get_array_response(x, y, c_app=280, c_steps=50,
         )**2, 2
     )
     resp /= resp.max()
-    return resp
+    return resp[::-1]
