@@ -1,0 +1,7 @@
+*.docx
+__pycache__
+.ipynb_checkpoints
+*.swp
+instructions.*
+.DS_Store
+

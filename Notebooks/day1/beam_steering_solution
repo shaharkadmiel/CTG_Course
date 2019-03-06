@@ -1,0 +1,66 @@
+deg2rad = np.pi / 180
+def theta_app_vel2pxpy(theta, app_vel):
+    """
+    Calculate the horizontal slowness vector p(px, py) for a propagating
+    plane wave with back azimuth `theta` and horizontal propagation
+    velocity (apparent velocity) `app_vel`.
+    
+    Parameters
+    ----------
+    theta : float
+        Back azimuth in degrees clockwise from North.
+    
+    app_vel : float
+        Horizontal propagation velocity in m/s.
+        
+    Returns
+    -------
+    px, py : float
+        Horizontal components of the slowness vector p.
+    """
+    slowness = 1 / app_vel
+    theta *= deg2rad
+    px = slowness * np.sin(theta)
+    py = slowness * np.cos(theta)
+    return px, py
+
+
+def get_sample_shifts(x, y, px, py, samp_rate=20):
+    """
+    Calculate the integer sample shifts needed to align the traces for a
+    given slowness vector `p` describing a propagating plane wave across
+    an array with configuration `r_n(x_n, y_n)`.
+    
+    Parameters
+    ----------
+    x, y : array-like
+        x and y coordinates (m) of the array elements (`n`-elements).
+        
+        ..note:: x, y coordinates should be detrended. That is, offsets
+                 relative to array center such that
+                 x.mean() = y.mean() = 0.
+        
+    px, py : float
+        Horizontal components of the slowness vector p (s/m).
+
+    samp_rate : float
+        Sampling rate of the data in samples per second (Hz).
+    
+    Returns
+    -------
+    sample_shifts : array-like
+        Number of samples needed to be added (shifted) to align traces
+        with the center.
+    """
+    # center the array as all parameters are relative to array center.
+    x, y = np.array((x, y))
+    
+    if not np.allclose(np.array((x.mean(), y.mean())), np.zeros(2)):
+        raise ValueError('Array is not centered at O(0,0). Detrend x, y')
+    
+    sample_shifts = -(
+        samp_rate * (
+            x * px + y * py
+        ) + 0.5  # adding 0.5 ensures values are rounded to the nearest int
+    ).astype(np.int64)
+    return sample_shifts

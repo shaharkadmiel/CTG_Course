@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.0">
+  <Source>SeisComP3</Source>
+  <Sender>ODC</Sender>
+  <Module/>
+  <ModuleURI/>
+  <Created>2019-03-05T18:11:52.007103</Created>
+  <Network code="NL" restrictedStatus="open" startDate="1993-01-01T00:00:00">
+    <Description>Netherlands Seismic and Acoustic Network</Description>
+    <Station code="DBN04" restrictedStatus="open" startDate="2002-08-21T14:30:00">
+      <Latitude unit="DEGREES">52.09875</Latitude>
+      <Longitude unit="DEGREES">5.17683</Longitude>
+      <Elevation>2.0</Elevation>
+      <Site>
+        <Name>De Bilt Infrasound Array</Name>
+        <Country>The Netherlands</Country>
+      </Site>
+      <CreationDate>2002-08-21T14:30:00</CreationDate>
+      <Channel code="HDF" locationCode="01" restrictedStatus="open" startDate="2016-06-24T10:00:00">
+        <Latitude unit="DEGREES">52.09875</Latitude>
+        <Longitude unit="DEGREES">5.17683</Longitude>
+        <Elevation>2.0</Elevation>
+        <Depth>1.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>100</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <Sensor resourceId="Sensor#20180822144238.905986.14">
+          <Type>KNMI 500s</Type>
+          <Description>KNMI microbarometer</Description>
+          <Manufacturer>KNMI</Manufacturer>
+          <Model>500s</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20180822144238.905891.13">
+          <Type>Kinemetrics, Inc. Obsidian</Type>
+          <Description>Obsidian digitizer</Description>
+          <Manufacturer>Kinemetrics, Inc.</Manufacturer>
+          <Model>Obsidian</Model>
+          <SerialNumber>454</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>7425.051676</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="ResponsePAZ#20020821143000.DBN04" resourceId="ResponsePAZ#20020821143000.DBN04">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>133.6666667</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="2">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.02685594425</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-133.5176878</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>0.0177027027</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">100.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>419430.4</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="DBN05" restrictedStatus="open" startDate="2002-08-21T14:30:00">
+      <Latitude unit="DEGREES">52.09842</Latitude>
+      <Longitude unit="DEGREES">5.17653</Longitude>
+      <Elevation>2.0</Elevation>
+      <Site>
+        <Name>De Bilt Infrasound Array</Name>
+        <Country>The Netherlands</Country>
+      </Site>
+      <CreationDate>2002-08-21T14:30:00</CreationDate>
+      <Channel code="HDF" locationCode="01" restrictedStatus="open" startDate="2016-06-24T10:00:00">
+        <Latitude unit="DEGREES">52.09842</Latitude>
+        <Longitude unit="DEGREES">5.17653</Longitude>
+        <Elevation>2.0</Elevation>
+        <Depth>1.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>100</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <Sensor resourceId="Sensor#20180822144239.325874.14">
+          <Type>KNMI 500s</Type>
+          <Description>KNMI microbarometer</Description>
+          <Manufacturer>KNMI</Manufacturer>
+          <Model>500s</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20180822144239.325767.13">
+          <Type>Kinemetrics, Inc. Obsidian</Type>
+          <Description>Obsidian digitizer</Description>
+          <Manufacturer>Kinemetrics, Inc.</Manufacturer>
+          <Model>Obsidian</Model>
+          <SerialNumber>454</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>7425.051676</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="ResponsePAZ#20020821143000.DBN05" resourceId="ResponsePAZ#20020821143000.DBN05">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>133.6666667</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="2">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.02685594425</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-133.5176878</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>0.0177027027</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">100.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>419430.4</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="DBN01" restrictedStatus="open" startDate="2002-08-21T14:30:00">
+      <Latitude unit="DEGREES">52.09887</Latitude>
+      <Longitude unit="DEGREES">5.17589</Longitude>
+      <Elevation>4.0</Elevation>
+      <Site>
+        <Name>De Bilt Infrasound Array</Name>
+        <Country>The Netherlands</Country>
+      </Site>
+      <CreationDate>2002-08-21T14:30:00</CreationDate>
+      <Channel code="HDF" locationCode="01" restrictedStatus="open" startDate="2016-06-24T10:00:00">
+        <Latitude unit="DEGREES">52.09887</Latitude>
+        <Longitude unit="DEGREES">5.17589</Longitude>
+        <Elevation>4.0</Elevation>
+        <Depth>1.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>100</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <Sensor resourceId="Sensor#20180822144237.684644.14">
+          <Type>KNMI 500s</Type>
+          <Description>KNMI microbarometer</Description>
+          <Manufacturer>KNMI</Manufacturer>
+          <Model>500s</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20180822144237.684548.13">
+          <Type>Kinemetrics, Inc. Obsidian</Type>
+          <Description>Obsidian digitizer</Description>
+          <Manufacturer>Kinemetrics, Inc.</Manufacturer>
+          <Model>Obsidian</Model>
+          <SerialNumber>454</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>7425.051676</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="ResponsePAZ#20020821143000.DBN01" resourceId="ResponsePAZ#20020821143000.DBN01">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>133.6666667</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="2">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.02685594425</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-133.5176878</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>0.0177027027</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">100.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>419430.4</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="DBN03" restrictedStatus="open" startDate="2002-08-21T14:30:00">
+      <Latitude unit="DEGREES">52.09897</Latitude>
+      <Longitude unit="DEGREES">5.17685</Longitude>
+      <Elevation>1.0</Elevation>
+      <Site>
+        <Name>De Bilt Infrasound Array</Name>
+        <Country>The Netherlands</Country>
+      </Site>
+      <CreationDate>2002-08-21T14:30:00</CreationDate>
+      <Channel code="HDF" locationCode="01" restrictedStatus="open" startDate="2016-06-24T10:00:00">
+        <Latitude unit="DEGREES">52.09897</Latitude>
+        <Longitude unit="DEGREES">5.17685</Longitude>
+        <Elevation>1.0</Elevation>
+        <Depth>1.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>100</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <Sensor resourceId="Sensor#20180822144238.50182.14">
+          <Type>KNMI 500s</Type>
+          <Description>KNMI microbarometer</Description>
+          <Manufacturer>KNMI</Manufacturer>
+          <Model>500s</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20180822144238.501726.13">
+          <Type>Kinemetrics, Inc. Obsidian</Type>
+          <Description>Obsidian digitizer</Description>
+          <Manufacturer>Kinemetrics, Inc.</Manufacturer>
+          <Model>Obsidian</Model>
+          <SerialNumber>454</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>7425.051676</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="ResponsePAZ#20020821143000.DBN03" resourceId="ResponsePAZ#20020821143000.DBN03">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>133.6666667</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="2">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.02685594425</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-133.5176878</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>0.0177027027</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">100.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>419430.4</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="DBN02" restrictedStatus="open" startDate="2002-08-21T14:30:00">
+      <Latitude unit="DEGREES">52.09897</Latitude>
+      <Longitude unit="DEGREES">5.17621</Longitude>
+      <Elevation>3.0</Elevation>
+      <Site>
+        <Name>De Bilt Infrasound Array</Name>
+        <Country>The Netherlands</Country>
+      </Site>
+      <CreationDate>2002-08-21T14:30:00</CreationDate>
+      <Channel code="HDF" locationCode="01" restrictedStatus="open" startDate="2016-06-24T10:00:00">
+        <Latitude unit="DEGREES">52.09897</Latitude>
+        <Longitude unit="DEGREES">5.17621</Longitude>
+        <Elevation>3.0</Elevation>
+        <Depth>1.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>100</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <Sensor resourceId="Sensor#20180822144238.098374.14">
+          <Type>KNMI 500s</Type>
+          <Description>KNMI microbarometer</Description>
+          <Manufacturer>KNMI</Manufacturer>
+          <Model>500s</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20180822144238.098275.13">
+          <Type>Kinemetrics, Inc. Obsidian</Type>
+          <Description>Obsidian digitizer</Description>
+          <Manufacturer>Kinemetrics, Inc.</Manufacturer>
+          <Model>Obsidian</Model>
+          <SerialNumber>454</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>7425.051676</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="ResponsePAZ#20020821143000.DBN02" resourceId="ResponsePAZ#20020821143000.DBN02">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>133.6666667</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="2">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.02685594425</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-133.5176878</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>0.0177027027</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">100.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>419430.4</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="DBN06" restrictedStatus="open" startDate="2002-08-21T14:30:00">
+      <Latitude unit="DEGREES">52.09853</Latitude>
+      <Longitude unit="DEGREES">5.17623</Longitude>
+      <Elevation>3.0</Elevation>
+      <Site>
+        <Name>De Bilt Infrasound Array</Name>
+        <Country>The Netherlands</Country>
+      </Site>
+      <CreationDate>2002-08-21T14:30:00</CreationDate>
+      <Channel code="HDF" locationCode="01" restrictedStatus="open" startDate="2016-06-24T10:00:00">
+        <Latitude unit="DEGREES">52.09853</Latitude>
+        <Longitude unit="DEGREES">5.17623</Longitude>
+        <Elevation>3.0</Elevation>
+        <Depth>1.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>100</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <Sensor resourceId="Sensor#20180822144239.74025.14">
+          <Type>KNMI 500s</Type>
+          <Description>KNMI microbarometer</Description>
+          <Manufacturer>KNMI</Manufacturer>
+          <Model>500s</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20180822144239.74013.13">
+          <Type>Kinemetrics, Inc. Obsidian</Type>
+          <Description>Obsidian digitizer</Description>
+          <Manufacturer>Kinemetrics, Inc.</Manufacturer>
+          <Model>Obsidian</Model>
+          <SerialNumber>454</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>7425.051676</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="ResponsePAZ#20020821143000.DBN06" resourceId="ResponsePAZ#20020821143000.DBN06">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>133.6666667</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="2">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.02685594425</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-133.5176878</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>0.0177027027</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">100.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>419430.4</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>

@@ -1,0 +1,915 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.0">
+  <Source>SeisComP3</Source>
+  <Sender>BGR</Sender>
+  <Module/>
+  <ModuleURI/>
+  <Created>2019-03-05T13:26:45.386424</Created>
+  <Network code="GR" restrictedStatus="open" startDate="1976-02-17T00:00:00">
+    <Description>German Regional Seismic Network, BGR Hannover</Description>
+    <Station code="I26H8" restrictedStatus="open" startDate="2009-10-28T00:00:00">
+      <Latitude unit="DEGREES">48.844365</Latitude>
+      <Longitude unit="DEGREES">13.712018</Longitude>
+      <Elevation>1073.6</Elevation>
+      <Site>
+        <Name>BGR Station Infrasound Array CTBTO IS26, Germany</Name>
+        <Country>Germany</Country>
+      </Site>
+      <CreationDate>2009-10-28T00:00:00</CreationDate>
+      <Channel code="BDF" locationCode="" restrictedStatus="open" startDate="2015-05-15T00:00:00">
+        <Latitude unit="DEGREES">48.844365</Latitude>
+        <Longitude unit="DEGREES">13.712018</Longitude>
+        <Elevation>1073.6</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>20</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <ClockDrift unit="SECONDS/SAMPLE">0.0</ClockDrift>
+        <Sensor resourceId="Sensor#20180726164243.995723.43">
+          <Type>MB</Type>
+          <Description>MB3a/g=6975</Description>
+          <Model>MB</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20140424082224.316231.44">
+          <Type>Guralp DM24</Type>
+          <Description>DM24/g=1</Description>
+          <Manufacturer>Guralp</Manufacturer>
+          <Model>DM24</Model>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>6975.93</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="MB3a/g=6975" resourceId="ResponsePAZ#20180726164243.995848.44">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>80500.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="4">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="5">
+                <Real>-887.7</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.062834</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-178.57</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real>-85.71</Real>
+                <Imaginary>-626.62</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real>-85.71</Real>
+                <Imaginary>626.62</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>6975.93</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">20.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="I26H1" restrictedStatus="open" startDate="1999-10-01T00:00:00">
+      <Latitude unit="DEGREES">48.846135</Latitude>
+      <Longitude unit="DEGREES">13.71793</Longitude>
+      <Elevation>1141.1</Elevation>
+      <Site>
+        <Name>BGR Station Infrasound Array CTBTO IS26, Germany</Name>
+        <Country>Germany</Country>
+      </Site>
+      <CreationDate>1999-10-01T00:00:00</CreationDate>
+      <Channel code="BDF" locationCode="" restrictedStatus="open" startDate="2015-05-15T00:00:00">
+        <Latitude unit="DEGREES">48.846135</Latitude>
+        <Longitude unit="DEGREES">13.71793</Longitude>
+        <Elevation>1141.1</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>20</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <ClockDrift unit="SECONDS/SAMPLE">0.0</ClockDrift>
+        <Sensor resourceId="Sensor#20180726164243.992324.35">
+          <Type>MB</Type>
+          <Description>MB3a/g=6980</Description>
+          <Model>MB</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20140424082224.316231.44">
+          <Type>Guralp DM24</Type>
+          <Description>DM24/g=1</Description>
+          <Manufacturer>Guralp</Manufacturer>
+          <Model>DM24</Model>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>6980.8</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="MB3a/g=6980" resourceId="ResponsePAZ#20180726164243.992445.36">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>80500.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="4">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="5">
+                <Real>-887.7</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.062834</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-178.57</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real>-85.71</Real>
+                <Imaginary>-626.62</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real>-85.71</Real>
+                <Imaginary>626.62</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>6980.8</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">20.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="I26H2" restrictedStatus="open" startDate="1999-10-01T00:00:00">
+      <Latitude unit="DEGREES">48.851617</Latitude>
+      <Longitude unit="DEGREES">13.713128</Longitude>
+      <Elevation>1110.9</Elevation>
+      <Site>
+        <Name>BGR Station Infrasound Array CTBTO IS26, Germany</Name>
+        <Country>Germany</Country>
+      </Site>
+      <CreationDate>1999-10-01T00:00:00</CreationDate>
+      <Channel code="BDF" locationCode="" restrictedStatus="open" startDate="2015-05-15T00:00:00">
+        <Latitude unit="DEGREES">48.851617</Latitude>
+        <Longitude unit="DEGREES">13.713128</Longitude>
+        <Elevation>1110.9</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>20</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <ClockDrift unit="SECONDS/SAMPLE">0.0</ClockDrift>
+        <Sensor resourceId="Sensor#20180726164243.995723.43">
+          <Type>MB</Type>
+          <Description>MB3a/g=6975</Description>
+          <Model>MB</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20140424082224.316231.44">
+          <Type>Guralp DM24</Type>
+          <Description>DM24/g=1</Description>
+          <Manufacturer>Guralp</Manufacturer>
+          <Model>DM24</Model>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>6975.93</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="MB3a/g=6975" resourceId="ResponsePAZ#20180726164243.995848.44">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>80500.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="4">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="5">
+                <Real>-887.7</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.062834</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-178.57</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real>-85.71</Real>
+                <Imaginary>-626.62</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real>-85.71</Real>
+                <Imaginary>626.62</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>6975.93</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">20.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="I26H3" restrictedStatus="open" startDate="1999-10-01T00:00:00">
+      <Latitude unit="DEGREES">48.842358</Latitude>
+      <Longitude unit="DEGREES">13.736813</Longitude>
+      <Elevation>1058.0</Elevation>
+      <Site>
+        <Name>BGR Station Infrasound Array CTBTO IS26, Germany</Name>
+        <Country>Germany</Country>
+      </Site>
+      <CreationDate>1999-10-01T00:00:00</CreationDate>
+      <Channel code="BDF" locationCode="" restrictedStatus="open" startDate="2015-05-15T00:00:00">
+        <Latitude unit="DEGREES">48.842358</Latitude>
+        <Longitude unit="DEGREES">13.736813</Longitude>
+        <Elevation>1058.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>20</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <ClockDrift unit="SECONDS/SAMPLE">0.0</ClockDrift>
+        <Sensor resourceId="Sensor#20180726164244.000026.53">
+          <Type>MB</Type>
+          <Description>MB3a/g=6968</Description>
+          <Model>MB</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20140424082224.316231.44">
+          <Type>Guralp DM24</Type>
+          <Description>DM24/g=1</Description>
+          <Manufacturer>Guralp</Manufacturer>
+          <Model>DM24</Model>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>6968.64</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="MB3a/g=6968" resourceId="ResponsePAZ#20180726164244.000148.54">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>80500.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="4">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="5">
+                <Real>-887.7</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.062834</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-178.57</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real>-85.71</Real>
+                <Imaginary>-626.62</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real>-85.71</Real>
+                <Imaginary>626.62</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>6968.64</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">20.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="I26H4" restrictedStatus="open" startDate="1999-10-01T00:00:00">
+      <Latitude unit="DEGREES">48.838572</Latitude>
+      <Longitude unit="DEGREES">13.715775</Longitude>
+      <Elevation>1084.5</Elevation>
+      <Site>
+        <Name>BGR Station Infrasound Array CTBTO IS26, Germany</Name>
+        <Country>Germany</Country>
+      </Site>
+      <CreationDate>1999-10-01T00:00:00</CreationDate>
+      <Channel code="BDF" locationCode="" restrictedStatus="open" startDate="2015-05-15T00:00:00">
+        <Latitude unit="DEGREES">48.838572</Latitude>
+        <Longitude unit="DEGREES">13.715775</Longitude>
+        <Elevation>1084.5</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>20</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <ClockDrift unit="SECONDS/SAMPLE">0.0</ClockDrift>
+        <Sensor resourceId="Sensor#20180726164244.003721.61">
+          <Type>MB</Type>
+          <Description>MB3a/g=6978</Description>
+          <Model>MB</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20140424082224.316231.44">
+          <Type>Guralp DM24</Type>
+          <Description>DM24/g=1</Description>
+          <Manufacturer>Guralp</Manufacturer>
+          <Model>DM24</Model>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>6978.37</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="MB3a/g=6978" resourceId="ResponsePAZ#20180726164244.003846.62">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>80500.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="4">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="5">
+                <Real>-887.7</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.062834</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-178.57</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real>-85.71</Real>
+                <Imaginary>-626.62</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real>-85.71</Real>
+                <Imaginary>626.62</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>6978.37</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">20.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="I26H5" restrictedStatus="open" startDate="1999-10-01T00:00:00">
+      <Latitude unit="DEGREES">48.844298</Latitude>
+      <Longitude unit="DEGREES">13.701987</Longitude>
+      <Elevation>1172.4</Elevation>
+      <Site>
+        <Name>BGR Station Infrasound Array CTBTO IS26, Germany</Name>
+        <Country>Germany</Country>
+      </Site>
+      <CreationDate>1999-10-01T00:00:00</CreationDate>
+      <Channel code="BDF" locationCode="" restrictedStatus="open" startDate="2015-05-15T00:00:00">
+        <Latitude unit="DEGREES">48.844298</Latitude>
+        <Longitude unit="DEGREES">13.701987</Longitude>
+        <Elevation>1172.4</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>20</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <ClockDrift unit="SECONDS/SAMPLE">0.0</ClockDrift>
+        <Sensor resourceId="Sensor#20180726164244.006021.67">
+          <Type>MB</Type>
+          <Description>MB3a/g=6983</Description>
+          <Model>MB</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20140424082224.316231.44">
+          <Type>Guralp DM24</Type>
+          <Description>DM24/g=1</Description>
+          <Manufacturer>Guralp</Manufacturer>
+          <Model>DM24</Model>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>6983.24</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="MB3a/g=6983" resourceId="ResponsePAZ#20180726164244.006147.68">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>80500.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="4">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="5">
+                <Real>-887.7</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.062834</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-178.57</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real>-85.71</Real>
+                <Imaginary>-626.62</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real>-85.71</Real>
+                <Imaginary>626.62</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>6983.24</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">20.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="I26H6" restrictedStatus="open" startDate="2009-10-28T00:00:00">
+      <Latitude unit="DEGREES">48.847854</Latitude>
+      <Longitude unit="DEGREES">13.710707</Longitude>
+      <Elevation>1090.4</Elevation>
+      <Site>
+        <Name>BGR Station Infrasound Array CTBTO IS26, Germany</Name>
+        <Country>Germany</Country>
+      </Site>
+      <CreationDate>2009-10-28T00:00:00</CreationDate>
+      <Channel code="BDF" locationCode="" restrictedStatus="open" startDate="2015-05-15T00:00:00">
+        <Latitude unit="DEGREES">48.847854</Latitude>
+        <Longitude unit="DEGREES">13.710707</Longitude>
+        <Elevation>1090.4</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>20</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <ClockDrift unit="SECONDS/SAMPLE">0.0</ClockDrift>
+        <Sensor resourceId="Sensor#20180726164243.992324.35">
+          <Type>MB</Type>
+          <Description>MB3a/g=6980</Description>
+          <Model>MB</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20140424082224.316231.44">
+          <Type>Guralp DM24</Type>
+          <Description>DM24/g=1</Description>
+          <Manufacturer>Guralp</Manufacturer>
+          <Model>DM24</Model>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>6980.8</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="MB3a/g=6980" resourceId="ResponsePAZ#20180726164243.992445.36">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>80500.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="4">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="5">
+                <Real>-887.7</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.062834</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-178.57</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real>-85.71</Real>
+                <Imaginary>-626.62</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real>-85.71</Real>
+                <Imaginary>626.62</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>6980.8</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">20.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="I26H7" restrictedStatus="open" startDate="2009-10-28T00:00:00">
+      <Latitude unit="DEGREES">48.846178</Latitude>
+      <Longitude unit="DEGREES">13.713941</Longitude>
+      <Elevation>1098.5</Elevation>
+      <Site>
+        <Name>BGR Station Infrasound Array CTBTO IS26, Germany</Name>
+        <Country>Germany</Country>
+      </Site>
+      <CreationDate>2009-10-28T00:00:00</CreationDate>
+      <Channel code="BDF" locationCode="" restrictedStatus="open" startDate="2015-05-15T00:00:00">
+        <Latitude unit="DEGREES">48.846178</Latitude>
+        <Longitude unit="DEGREES">13.713941</Longitude>
+        <Elevation>1098.5</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <SampleRateRatio>
+          <NumberSamples>20</NumberSamples>
+          <NumberSeconds>1</NumberSeconds>
+        </SampleRateRatio>
+        <StorageFormat>Steim2</StorageFormat>
+        <ClockDrift unit="SECONDS/SAMPLE">0.0</ClockDrift>
+        <Sensor resourceId="Sensor#20180726164243.995723.43">
+          <Type>MB</Type>
+          <Description>MB3a/g=6975</Description>
+          <Model>MB</Model>
+        </Sensor>
+        <DataLogger resourceId="Datalogger#20140424082224.316231.44">
+          <Type>Guralp DM24</Type>
+          <Description>DM24/g=1</Description>
+          <Manufacturer>Guralp</Manufacturer>
+          <Model>DM24</Model>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>6975.93</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>PA</Name>
+              <Description>None</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>None</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros name="MB3a/g=6975" resourceId="ResponsePAZ#20180726164243.995848.44">
+              <InputUnits>
+                <Name>PA</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>80500.0</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">1.0</NormalizationFrequency>
+              <Zero number="4">
+                <Real>0.0</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Zero number="5">
+                <Real>-887.7</Real>
+                <Imaginary>0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real>-0.062834</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real>-178.57</Real>
+                <Imaginary>0.0</Imaginary>
+              </Pole>
+              <Pole number="2">
+                <Real>-85.71</Real>
+                <Imaginary>-626.62</Imaginary>
+              </Pole>
+              <Pole number="3">
+                <Real>-85.71</Real>
+                <Imaginary>626.62</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>6975.93</Value>
+              <Frequency>1.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">20.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>1.0</Value>
+              <Frequency>0.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>

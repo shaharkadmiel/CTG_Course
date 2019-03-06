@@ -1,0 +1,33 @@
+def compute_fratio(win):
+    """
+    Function to calculate the Fisher ratio based on Melton and Bailey
+    [1957].
+    
+    Parameters
+    ----------
+    win : array-like
+        2D array with N traces (rows) of length T samples (cols).
+        
+    Returns
+    -------
+    fratio : float
+        The Fisher ratio value.
+    """
+    N, T = win.shape
+    fratio = (
+        T * (N - 1) / N / (T - 1) *  # f_dof
+        (np.sum(np.sum(win, axis=0)**2) - np.sum( win )**2 / T ) /
+        (np.sum(win**2) - np.sum(np.sum(win, axis=0)**2) / N )
+    )
+    return fratio
+
+def fratio2snr(fratio, N):
+    return np.sqrt((fratio - 1) / N)
+
+
+def snr2fratio(snr, N):
+    return snr**2 * N + 1
+
+
+def fratio_significance(N, T, alpha=0.05):
+    return f_stats.ppf(1 - alpha, T - 1, T * (N - 1))
